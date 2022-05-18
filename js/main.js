@@ -10,3 +10,13 @@ window.onscroll = function () {
         nav.classList.remove('bg-dark')
     }
 }
+    
+// Typed Object
+let typed = new Typed("#typing", 
+    {
+    strings: ["Web Developer", "Graphic Design", "Blogger"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+    }
+)
