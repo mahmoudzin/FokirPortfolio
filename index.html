@@ -11,38 +11,57 @@
     </head>
     <body>
         <!-- Navbar  -->
-        <div class="navbar">
-            <div class="logo">
-                <h2>Fokir</h2>
-            </div>
-            <div class="nav-close">
-               <span></span>
-               <span></span>
-               <span></span>
-            </div>
-            <div class="menu">
-                <ul> 
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#testimonial">Testimonial</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+            <div class="container">
+              <a class="navbar-brand color-main fs-2 fw-bolder" href="#">
+                Fokir
+              </a>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse in" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  
+                <li class="nav-item fw-600">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                  <li class="nav-item fw-600">
+                    <a class="nav-link" href="#about">about</a>
+                  </li>
+                  <li class="nav-item fw-600">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item fw-600">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item fw-600">
+                    <a class="nav-link" href="#testimonial">Testimonial</a>
+                  </li>
+                  <li class="nav-item fw-600">
+                    <a class="nav-link" href="#blog">Blog</a>
+                  </li>
+                  <li class="nav-item fw-600">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
                 </ul>
+              </div>
             </div>
-        </div>
+        </nav>
+
+
         <!-- Home -->
-        <div class="home" id="home">
-            <div class="shaddow">
+        <section class="home vh-100 intil-background text-white" id="home">
+            <div class="shaddow d-flex justify-content-center align-items-center h-100">
                 <div class="content">
-                    <h3>Hello, I'm</h3>
-                    <h1>ALEX SMITH</h1>
-                    <h4>and I'm Professional Web <span class="pointer">Design</span></h4>
+                    <h3 class="text-white fs-1">Hello, I'm</h3>
+                    <h1 class="color-main my-4 display-1">ALEX SMITH</h1>
+                    <h4 class="text-white fs-2">and I'm Professional Web <span class="pointer">Design</span></h4>
                 </div>  
             </div>
-        </div>
-        <!-- About -->
+        </section>
+        <!-- About 
         <div class="about" id="about">
             <div class="container">
                 <div class="flex-box">
@@ -83,7 +102,7 @@
 
             </div>
         </div>
-         <!-- Services -->
+         <!-- Services 
          <div class="services" id="services">
             <div class="container">
                 <h2 class="section-heading">Our Services</h2>
@@ -125,7 +144,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio -->
+        <!-- Portfolio 
         <div class="portfolio parent" id="portfolio">
             <h2 class="section-heading">Our Portfolio</h2>
                 <div class="split-up">
@@ -178,7 +197,7 @@
                 </div>
             </div>
         </div>
-        <!-- Statics -->
+        <!-- Statics 
         <div class="statics" >
             <div class="container">
                 <div class="flex-box">
@@ -206,7 +225,7 @@
                 </div>   
             </div>
         </div>
-        <!-- Testimonial -->
+        <!-- Testimonial 
         <div class="feedback" id="testimonial">
             <div class="container">
                 <h2 class="section-heading">Client's Feedback</h2>
@@ -239,7 +258,7 @@
                 </div>
             </div>
         </div>
-        <!-- Blog -->
+        <!-- Blog 
         <div class="blog parent" id="blog">
             <div class="container">
                 <h2 class="section-heading">Our Blog</h2>
@@ -258,7 +277,7 @@
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae.
                                 </p>
-                                <a href="#">Learn More--></a> 
+                                <a href="#">Learn More</a> 
                             </div>
                         </div>
                     </div>
@@ -271,7 +290,7 @@
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae.
                                 </p>
-                                <a href="#">Learn More--></a>
+                                <a href="#">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -284,14 +303,14 @@
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae.
                                 </p>
-                                <a href="#">Learn More--></a> 
+                                <a href="#">Learn More</a> 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-         <!-- Contact -->
+         <!-- Contact 
          <div class="contact parent" id="contact">
             <div class="container">
                 <h2 class="section-heading">Contact Us</h2>
@@ -317,7 +336,7 @@
                 </form>
             </div>
         </div>
-        <!-- FOOTER -->
+        <!-- FOOTER 
         <div class="footer">
             <div class="fottor-icons">
                 <img src="images/icons/facebook.png" alt="facebook">
@@ -326,7 +345,7 @@
                 <img src="images/icons/google-plus.png" alt="google plus">
             </div>
             <p>Copy Right 2022 © By <a href="#">Mahmoud Shaaban</a> All Rights Reserved</p> 
-        </div>
+        </div>-->
         <script src="js/main.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </body>
