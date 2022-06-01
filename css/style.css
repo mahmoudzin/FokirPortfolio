@@ -45,6 +45,9 @@ h1, h2, h3, h4, h5{
 .bg-sec{
     background-color: #403d38;
 }
+.bg-gray{
+    background-color: #e2e2e2
+}
 .color-main {
     color: var(--main-color) !important
 }
@@ -214,47 +217,21 @@ h1, h2, h3, h4, h5{
 
 
 /* Our Services */
-.services{
-    background-color: #f1f1f1;    
-    text-align: center;
-    padding-top:50px;
-}
-.services .flex-box{
-    padding-top: 20px;
-}
+
 .box{
-    width: 25%;
-    padding: 40px 15px;
-    transition: .3s background-color;
+    transition: var(--transition);
     cursor: pointer;
 }
-.services .box:hover{
+.box:hover{
     background-color: #fff;
 }
-.services .box .box-img{
-    width:50px;
-    height: 50px;
-    margin: 0 auto 10px;
-}
-.services .box img{
-    width: 100%;
-    transition: .3s transform;
-}
-.services .box:hover img{
-    transform: scale(1.1)
-}
 
-/*SERVICES SECTION SMALL SCREEN*/
-@media screen and (max-width: 767px){
-    .box{
-        width: 100%;
-    }
+.box i{
+    transition: var(--transition);
 }
-/*SERVICES SECTION MEDIUM SCREEN*/
-@media screen and (max-width: 992px) and (min-width: 768px){
-    .box{
-        width: 50%;
-    }
+.box:hover i{
+    transform: scale(1.2);
+    color: var(--main-color);
 }
 /* Our Portfolio */
 .portfolio{
