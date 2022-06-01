@@ -33,6 +33,7 @@ h1, h2, h3, h4, h5{
     font-size: 40px;
     text-align: center;
 }
+
 @media (max-width: 767px){
     .section-heading {
         font-size: 32px;
@@ -170,6 +171,13 @@ h1, h2, h3, h4, h5{
 }
 .img-box:hover .person-icons{
     bottom:0
+}
+.person-icons i{
+    cursor: pointer;
+    transition: var(--transition);
+}
+.person-icons i:hover{
+    color: var(--main-color);
 }
 
 .about-content{
