@@ -66,7 +66,12 @@ h1, h2, h3, h4, h5{
         font-size: 25px;
     }
 }
-
+.make-pointer{
+    cursor: pointer;
+}
+.transition{
+    transition: var(--transition);
+}
 .main-btn{
     padding: 10px 15px;
     border: var(--main-color) 1px solid;
@@ -234,42 +239,28 @@ h1, h2, h3, h4, h5{
     color: var(--main-color);
 }
 /* Our Portfolio */
-.portfolio{
-    text-align: center;
-}
-.portfolio ul{
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.portfolio ul li{
-    margin-left: 15px;
-    cursor: pointer;
-    transition: 0.3s color;
-}
-.portfolio ul li:hover{
+
+#portfolio ul li:hover{
     color: var(--main-color);
 }
-.portfolio .box{
-    width: calc(100% / 3);
+#portfolio .box{
     position: relative;
 }
-.portfolio .box img{
+#portfolio .box img{
     max-width: 100%;
 }
 .img-cover{
     position: absolute;
     background-color: rgba(0,0,0, .5);
-    width: calc(100% - 30px);
-    height: calc(100% - 80px) ;
-    top: 40px;
-    left: 15px;
+    width: calc(100% );
+    height: calc(100% ) ;
+    top: 0;
+    left: 0;
     cursor: pointer;
     opacity: 0;
     transition: .4s opacity;
 }
-.portfolio .box:hover .img-cover{
+#portfolio .box:hover .img-cover{
     opacity: 1;
 }
 .img-cover img{
