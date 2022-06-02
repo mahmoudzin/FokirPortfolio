@@ -270,17 +270,21 @@ h1, h2, h3, h4, h5{
     bottom: 15px;
 }
 
-/*PORTFOLIO SECTION SMALL SCREEN*/
-@media screen and (max-width: 767px){
-    .portfolio  .box{
-        width: 100%;
-    }
+#fixed-box{
+    left: 0;
+    top: 0;
+    z-index: 100000;
+    background-color: rgba(0,0,0, .5);
 }
-/*PORTFOLIO SECTION MEDIUM SCREEN*/
-@media screen and (max-width: 992px) and (min-width: 768px){
-    .portfolio .box{
-        width: 50%;
-    }
+#btn-left{
+    left: 10px;
+}
+#btn-right{
+    right: 10px;
+}
+#btn-close{
+    top: 20px;
+    right: 10px;
 }
 /* statics */
 .statics{

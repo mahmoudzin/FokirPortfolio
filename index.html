@@ -145,71 +145,82 @@
             </div>
         </div>
         <!-- Portfolio -->
-        <div class="container py-5" id="portfolio">
+        <div class="container  py-5" id="portfolio">
             <h2 class="section-heading">Our Portfolio</h2>
                 <div class="split-up">
                     <div class="short-line"></div>
                     <div class="long-line"></div>
                     <div class="short-line"></div>
                 </div>
-                <ul class="list-unstyled d-flex justify-content-center align-items-center mb-5">
-                    <li id="all" class="ms-3 make-pointer transition">ALL</li>
+                <ul id="portfolio-nav" class="list-unstyled d-flex justify-content-center align-items-center mb-5">
+                    <li id="all" class="color-main ms-3 make-pointer transition">ALL</li>
                     <li id="graphic" class="ms-3 make-pointer transition">GRAPHIC</li>
                     <li id="webdesign" class="ms-3 make-pointer transition">WEB DESIGN</li>
                     <li id="branding" class="ms-3 make-pointer transition">BRANDING</li>
                 </ul>
-                <div class="row gy-3">
-
-                    <div class="col-md-6 col-lg-4" >
+                <div class="row gy-3" id="projectsContaitner">
+                    <div class="col-md-6 col-lg-4" data-category="graphic">
                         <div class="box">
-                            <img src="images/portfolio/1.jpg" alt="">
-                            <div class="img-cover">
+                            <img src="images/portfolio/1.jpg" alt="" id="0">
+                            <div class="img-cover" id="0">
                                 <img src="images/icons/photo.png" alt="">
                             </div>
                         </div>
                     </div>
-                   <div class="col-md-6 col-lg-4">
-                        <div class="box">
-                            <img src="images/portfolio/2.jpg" alt="">
-                            <div class="img-cover">
-                                <img src="images/icons/photo.png" alt="">
+                   <div class="col-md-6 col-lg-4" data-category="graphic">
+                        <div class="box" >
+                            <img src="images/portfolio/2.jpg" alt="" id="1">
+                            <div class="img-cover"id="1">
+                                <img src="images/icons/photo.png" alt="" >
                             </div>
                         </div>  
                    </div>  
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-category="webdesign">
                         <div class="box">
-                            <img src="images/portfolio/3.jpg" alt="">
-                            <div class="img-cover">
-                                <img src="images/icons/photo.png" alt="">
+                            <img src="images/portfolio/3.jpg" alt="" id="2">
+                            <div class="img-cover" id="2">
+                                <img src="images/icons/photo.png" alt="" >
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-category="webdesign">
                         <div class="box">
-                            <img src="images/portfolio/4.jpg" alt="">
-                            <div class="img-cover">
+                            <img src="images/portfolio/4.jpg" alt="" id="3">
+                            <div class="img-cover" id="3">
                                 <img src="images/icons/photo.png" alt="">
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4" data-category="branding">
                         <div class="box">
-                            <img src="images/portfolio/5.jpg" alt="">
-                            <div class="img-cover">
+                            <img src="images/portfolio/5.jpg" alt="" id="4">
+                            <div class="img-cover" id="4">
                                 <img src="images/icons/photo.png" alt="">
                             </div>
                         </div>
                     </div>
-                   <div class="col-md-6 col-lg-4">
+                   <div class="col-md-6 col-lg-4" data-category="branding">
                         <div class="box">
-                            <img src="images/portfolio/6.jpg" alt="">
-                        <div class="img-cover">
-                            <img src="images/icons/photo.png" alt="">
+                            <img src="images/portfolio/6.jpg" alt="" id="5">
+                        <div class="img-cover" id="5">
+                            <img src="images/icons/photo.png" alt="" >
                         </div>
                    </div>
                 </div>
         </div>
+        <div id="fixed-box" class="position-fixed d-none justify-content-center align-items-center vh-100 w-100">
+
+            <div id="fixedContent" class="content position-relative bg-info">
+        
+              <img src="" alt="" id="fixedBoxImg">
+              <i class="make-pointer position-absolute fa-solid fa-arrow-left translate-middle-y top-50" id="btn-left"></i>
+              <i class="make-pointer position-absolute fa-solid fa-arrow-right translate-middle-y top-50" id="btn-right"></i>
+              <i class="make-pointer position-absolute fa-solid fa-xmark fa-lg" id="btn-close"></i>
+        
+            </div>
+        
+          </div>
         <!-- Statics 
         <div class="statics" >
             <div class="container">
