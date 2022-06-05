@@ -286,65 +286,45 @@ h1, h2, h3, h4, h5{
     top: 20px;
     right: 10px;
 }
-/* statics */
 
 /* feedback */
-.feedback{
-    padding: 50px 0;
-}
-.feedback .flex-box{
-    align-items: flex-start
-}
-.feedback h2{
-    text-align: center;
-}
+
 .feedback-box{
-    background: linear-gradient(-45deg, #f1f1f1 80%,var(--main-color) 20%);
-    width: 70%;
-    margin: auto;
-    padding: 40px;
-    position: relative;
+    background: linear-gradient(-45deg, #e2e2e2 80%,var(--main-color) 20%);
 }
 .feedback-box .avatar{
-   width: 30%;
-   position: relative;
    z-index: 1;
 }
 .feedback-box .avatar img{
     width: 110px;
     height: 110px;
+}
+.carousel-indicators {
+    bottom: -60px;
+}
+.carousel-indicators [data-bs-target]{
     border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: #a4a4a4;
+    opacity: 1;
+    transition: var(--transition);
 }
-.location {
-    margin-bottom: 20px;
+.carousel-indicators .active{
+    width: 25px;
+    background-color: var(--main-color);
+    border-radius: 43%;
 }
-.feedback-box .location img{
-    width: 20px;
-}
-.feedback-text{
-    width: 70%;
-}
-.feedback-text h3{
-    font-size: 26px;
-}
-.feedback-text p{
-    margin-bottom: 15px
-}
-.rating img{
-    width: 20px
-}
+/* .carousel-indicators{
+   
+} */
 /*FEEDBACK SECTION SMALL SCREEN*/
 @media screen and (max-width: 767px){
     .feedback-box{
         width: 450px;
     }
     .feedback-box .avatar{
-        width: 100%;
         text-align: center;
-    }
-    .feedback-text{
-        width: 100%;
-        margin-top: 30px;
     }
 }
 /*FEEDBACK SECTION MEDIUM SCREEN*/
@@ -501,3 +481,4 @@ input:focus, textarea:focus{
         
     }  
 }
+
