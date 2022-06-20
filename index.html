@@ -5,13 +5,37 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <div id="loading" class=" bg-dark vh-100 text-white-50 d-flex justify-content-center align-items-center position-fixed w-100">
+            <i class="fa fa-spinner fa-spin fa-5x" style="--fa-animation-duration: 2s;"></i>
+        </div>
+        <div class="color-box position-fixed d-flex shadow-sm">
+            
+            <div class="color-options p-3 position-relative">
+                <h3>Pick Your Color: </h3>
+                <ul class="list-unstyled d-flex flex-wrap">
+                    <li class="w-25 p-2"><div class="w-100"></div></li>
+                    <li class="w-25 p-2"><div class="w-100"></div></li>
+                    <li class="w-25 p-2"><div class="w-100"></div></li>
+                    <li class="w-25 p-2"><div class="w-100"></div></li>
+                    <li class="w-25 p-2"><div class="w-100"></div></li>
+                    <li class="w-25 p-2"><div class="w-100"></div></li>
+                    <li class="w-25 p-2"><div class="w-100"></div></li>
+                    <li class="w-25 p-2"><div class="w-100"></div></li>
+                </ul>
+            </div>
+            <div class="color-box-icon" id="color-box-switch">
+                <i class="fa fa-solid fa-cog p-2 fa-spin"></i>
+            </div>
+            
+        </div>
+
         <!-- Navbar  -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
             <div class="container">
@@ -52,7 +76,7 @@
             </div>
         </nav>
         <!-- Home -->
-        <section class="home vh-100 intil-background text-white" id="home">
+        <section class="home vh-100 intil-background text-white s" id="home">
             <div class="shaddow d-flex justify-content-center align-items-center h-100">
                 <div class="content">
                     <h3 class="text-white fs-1">Hello, I'm</h3>
@@ -62,7 +86,7 @@
             </div>
         </section>
         <!-- About -->
-        <section class="container py-5 about" id="about">
+        <section class="container py-5 about s" id="about">
             
                 <div class="row align-items-center">   
                     <div class="col-lg-4 col-md-6">
@@ -102,7 +126,7 @@
                 </div>
         </section>
          <!-- Services -->
-         <section class="bg-gray text-center py-5" id="services">
+         <section class="bg-gray text-center py-5 s" id="services">
             <div class="container">
                 <h2 class="section-heading">Our Services</h2>
                 <div class="split-up">
@@ -110,42 +134,42 @@
                     <div class="long-line"></div>
                     <div class="short-line"></div>
                 </div>
-
-                <div class="row gy-1">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="box p-3">
-                            <i class="fa-solid fa-palette fa-2x"></i>
-                            <h3 class="fs-1 my-3">UI/UX DESIGN</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
+                    <div class="row gy-1">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="box p-3">
+                                <i class="fa-solid fa-palette fa-2x"></i>
+                                <h3 class="fs-1 my-3">UI/UX DESIGN</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
+                            </div>
                         </div>
+                    
+                        <div class="col-md-6 col-lg-3">
+                            <div class="box p-3">
+                                <i class="fa-solid fa-code fa-2x"></i>
+                                <h3 class="fs-1 my-3">APP DEVELOPMENT</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
+                            </div>
+                        </div>
+                       <div class="col-md-6 col-lg-3">
+                            <div class="box p-3">
+                                <i class="fa-solid fa-lightbulb fa-2x"></i>
+                                <h3 class="fs-1 my-3">PRODUCT DESIGN</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
+                            </div>
+                       </div>
+                       <div class="col-md-6 col-lg-3">
+                            <div class="box p-3">
+                                <i class="fa-solid fa-sliders fa-2x"></i>
+                                <h3 class="fs-1 my-3">UI/UX DESIGN</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
+                            </div>
+                       </div>
                     </div>
-
-                    <div class="col-md-6 col-lg-3">
-                        <div class="box p-3">
-                            <i class="fa-solid fa-code fa-2x"></i>
-                            <h3 class="fs-1 my-3">APP DEVELOPMENT</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
-                        </div>
-                    </div>
-                   <div class="col-md-6 col-lg-3">
-                        <div class="box p-3">
-                            <i class="fa-solid fa-lightbulb fa-2x"></i>
-                            <h3 class="fs-1 my-3">PRODUCT DESIGN</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
-                        </div>
-                   </div>
-                   <div class="col-md-6 col-lg-3">
-                        <div class="box p-3">
-                            <i class="fa-solid fa-sliders fa-2x"></i>
-                            <h3 class="fs-1 my-3">UI/UX DESIGN</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
-                        </div>
-                   </div>
-                </div>
+                
             </div>
         </section>
         <!-- Portfolio -->
-        <section class="container  py-5" id="portfolio">
+        <section class="container  py-5 s" id="portfolio">
             <h2 class="section-heading">Our Portfolio</h2>
                 <div class="split-up">
                     <div class="short-line"></div>
@@ -260,8 +284,9 @@
                 </div>
             </div>   
         </section>
+        
         <!-- Testimonial -->
-        <section class="py-5" id="testimonial">
+        <section class="py-5 s" id="testimonial">
             <div class="container">
                 <h2 class="section-heading text-center">Client's Feedback</h2>
                 <div class="split-up">
@@ -270,7 +295,7 @@
                     <div class="short-line"></div>
                 </div>
 
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -334,12 +359,67 @@
                         </div>
                       </div>
                     </div>
+                  </div> -->
+                  <div class="owl-carousel owl-theme">
+                    <div class="feedback-box row m-auto py-5 position-relative w-75">
+                        <div class="col-md-4">
+                            <div class="avatar d-flex justify-content-center align-items-start position-relative h-100">
+                                <img class="rounded-circle" src="images/slider/2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="feedback-text mt-3 mt-md-0">
+                                <h3 class="fs-2">Alex Ander</h3>
+                                <div class="mb-4">
+                                    <i class="fa-solid fa-location-dot "></i>
+                                    <span> Untid</span>
+                                </div>
+                                <p class="mb-3">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, expedita tenetur. Animi optio nostrum suscipit totam obcaecati tenetur eum consequuntur reiciendis sit exercitationem dolore maiores quidem omnis rem minima quas blanditiis, dolorem beatae. Quis perferendis asperiores 
+                                </p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="feedback-box row m-auto py-5 position-relative w-75">
+                        <div class="col-md-4">
+                            <div class="avatar d-flex justify-content-center align-items-start position-relative h-100">
+                                <img class="rounded-circle" src="images/slider/2.jpg" alt="">
+                            </div>
+                        </div>
+                        <di class="col-md-8">
+                            <div class="feedback-text mt-3 mt-md-0">
+                                <h3 class="fs-2">Alex Ander</h3>
+                                <div class="mb-4">
+                                    <i class="fa-solid fa-location-dot "></i>
+                                    <span> Untid</span>
+                                </div>
+                                <p class="mb-3">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, expedita tenetur. Animi optio nostrum suscipit totam obcaecati tenetur eum consequuntur reiciendis sit exercitationem dolore maiores quidem omnis rem minima quas blanditiis, dolorem beatae. Quis perferendis asperiores 
+                                </p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </di class="col-md-8"v>
+                    </div> 
                   </div>
-                
             </div>
         </section>
+
+        
         <!-- Blog -->
-        <section class="bg-gray py-5" id="blog">
+        <section class="bg-gray py-5 s" id="blog">
             <div class="container">
                 <h2 class="section-heading">Our Blog</h2>
                 <div class="split-up">
@@ -391,7 +471,7 @@
             </div>
         </section>
          <!-- Contact -->
-         <section class="py-5" id="contact">
+         <section class="py-5 s" id="contact">
             <div class="container">
                 <h2 class="section-heading">Contact Us</h2>
                 <div class="split-up">
@@ -416,6 +496,9 @@
                     <button class="main-btn mt-3" type="submit">SEND MESSAGE</button>
             </div>
         </section>
+        <button class="btn btn-dark py-2 px-3 rounded-3" id="btn-up">
+            <i class="fa fa-solid fa-arrow-alt-circle-up fa-2x"></i>
+        </button>
         <!-- FOOTER -->
         <footer class="py-5 bg-dark text-center">
             <div class="mb-3">
@@ -427,7 +510,13 @@
             <p>Copy Right 2022 © By <a href="#" class="color-main text-decoration-none">Mahmoud Shaaban</a> All Rights Reserved</p> 
         </footer>
   
-        <script src="js/main.js"></script>
+        
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

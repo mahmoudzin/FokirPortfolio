@@ -14,11 +14,12 @@
     /*Font family*/
     --custome-font: 'Source Sans Pro', sans-serif;
     --normal-font: "Roboto",sans-serif;
+    scroll-behavior: auto;
 }
 
 body{
     font-family:var(--normal-font);
-    color: var(--color-gray)
+    color: var(--color-gray);
 }
 h1, h2, h3, h4, h5{
     font-family: var(--custome-font);
@@ -103,10 +104,71 @@ h1, h2, h3, h4, h5{
     margin-top: 5px !important;
     margin-bottom: 4px !important; 
 }
-/* NAVBAR SECTION */
+/*LOADING*/
+#loading{
+    z-index: 10000000000;
+}
+/* Color Options */
+.color-box{
+    top: 30%;  
+    z-index: 100000000;
+}
+.showBox{
+    left: 0
+}
+.color-box .color-box-icon{
+    height: fit-content;
+    background: #555;
+    color: #e2e2e2;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+.color-options{
+    background-color: #e2e2e2;
+}
+.color-options li div{
+    height: 25px;
+    border-radius: 30%;
+    cursor: pointer;
+}
+.color-options li:nth-child(1) div{
+    background-color: #ff305b;
+}
+.color-options li:nth-child(2) div{
+    background-color: #bd30ff;
+}
+.color-options li:nth-child(3) div{
+    background-color: #3078ff;
+}
+.color-options li:nth-child(4) div{
+    background-color: #30ffa9;
+}
+.color-options li:nth-child(5) div{
+    background-color: #fcff30;
+}
+.color-options li:nth-child(6) div{
+    background-color: #ff9e30;
+}
+.color-options li:nth-child(7) div{
+    background-color: #ff3030;
+}
+.color-options li:nth-child(8) div{
+    background-color: #ff30a9;
+}
+
+#btn-up{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+}
 /*NAVBAR SECTION*/
-.navbar a{
+.navbar, .navbar a{
     transition: var(--transition);   
+}
+.hideNav{
+    top: -78px !important;
 }
 .navbar-dark .nav-link{
     color: #fff !important;
@@ -220,15 +282,15 @@ h1, h2, h3, h4, h5{
     }
 }
 
-
 /* Our Services */
-
 .box{
     transition: var(--transition);
     cursor: pointer;
+    min-height: 100%;
 }
 .box:hover{
     background-color: #fff;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
 }
 
 .box i{
@@ -245,6 +307,7 @@ h1, h2, h3, h4, h5{
 }
 #portfolio .box{
     position: relative;
+    transition: var(--transition)
 }
 #portfolio .box img{
     max-width: 100%;
@@ -302,15 +365,21 @@ h1, h2, h3, h4, h5{
 .carousel-indicators {
     bottom: -60px;
 }
-.carousel-indicators [data-bs-target]{
+.owl-dots{
+    text-align: center;
+    margin-top:20px
+}
+.owl-carousel button.owl-dot span{
+    display: inline-block;
     border-radius: 50%;
     height: 15px;
     width: 15px;
+    margin-right: 10px;
     background-color: #a4a4a4;
     opacity: 1;
     transition: var(--transition);
 }
-.carousel-indicators .active{
+.owl-carousel button.active span{
     width: 25px;
     background-color: var(--main-color);
     border-radius: 43%;
@@ -359,6 +428,12 @@ footer i:hover{
     color:var(--main-color);
     transform: scale(1.1)
 }
-
-
-
+#projectsContaitner .div{
+    transition: all 2s;
+}
+.showProject{
+    transform: scale(1)
+}
+.hideProject{
+    transform: scale(0)
+}
