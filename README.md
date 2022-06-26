@@ -23,7 +23,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/mahmoudzin/FokirPortfolio/blob/main/mainphoto.png)
+![screenshot](https://github.com/mahmoudzin/FokirPortfolio/blob/main/main.png)
 
 - You |Can See Demo from [here]("https://mahmoudzin.github.io/FokirPortfolio/)
 
