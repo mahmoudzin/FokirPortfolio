@@ -18,7 +18,6 @@
 - [Built With](#built-with)
 - [Features](#features)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 <!-- OVERVIEW -->
 
@@ -36,13 +35,18 @@
 - Html 
 - Css 
 - [BOOTSTRAP](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
-- javaSCript (DOM)
+- javaSCript
+- [jQuery](https://jquery.com/)
+- [typed.js](https://github.com/mattboldt/typed.js/)
+- [owl carousel](https://owlcarousel2.github.io/OwlCarousel2/index.html)
+- [mixitup](https://www.kunkalabs.com/mixitup/)
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This Dynamic portfolio site is multiple purposes
+- Modren Dynamic portfolio site for multiple purposes
+- pick your favorite color
 
 ## Contact
 
